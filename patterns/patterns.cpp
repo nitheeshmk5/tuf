@@ -78,5 +78,6 @@ void pattern9(int n){
 int main(){
 
     pattern9(5);
+    cout << "added\n";
     return 0;
 }
