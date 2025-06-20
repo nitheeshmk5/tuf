@@ -32,13 +32,22 @@ void print_n_to_one( int n){
         return;
     }
     cout << n << endl;
-    print_n_to_one(n - 1);
+    print_n_to_one(n -1);
+}
+
+void backtarcking(int i,int n){
+    if(i < 1){
+        return;
+    }
+    backtarcking(i - 1, n);
+    cout << i << endl;
 }
 
 int main(){
     // int c = 0;
     // rec(c);
     //print_name(0,5);
-    print_to_n(0, 5);
-    print_n_to_one(5);
+    //print_to_n(0, 5);
+    //print_n_to_one(5);
+    backtarcking(5, 5);
 }
