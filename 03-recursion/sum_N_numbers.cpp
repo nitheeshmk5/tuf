@@ -18,7 +18,15 @@ int sumNum(int n){
     return n + sumNum(n - 1);
 }
 
+int fact(int n){
+    if(n == 0){
+        return 1;
+    }
+    return n * fact(n - 1);
+}
+
 int main(){
-    //sumOfNnumbers1(0,10);
-    cout << sumNum(10) << endl;
+    // sumOfNnumbers1(0,10);
+    // cout << sumNum(10) << endl;
+    cout << fact(4) << endl;
 }
